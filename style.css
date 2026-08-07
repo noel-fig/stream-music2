@@ -1,0 +1,132 @@
+body{
+    margin:0;
+    background-image: url(background2.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "M PLUS Rounded 1c",sans-serif;
+}
+.container{
+    color: aliceblue;
+    font-size: 50px;
+    width: 1100px;
+    margin: 40px auto;
+    background-color: rgba(5, 5, 5, 0.9);
+    padding:40px;
+    min-height: 200vh;
+}
+h1{
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    margin-bottom: 0.9px;
+}
+.guitar-image{
+ position: absolute;
+ top: 30px;
+ right: 80px;
+ width: 200px;
+}
+hr{
+    border: none;
+    height: 5px;
+    background-color: white;
+    margin:30px 0;
+}
+p{
+    transform: translateY(50px);
+    font-family: "Allura",Monotype Corsiva;
+}
+.subtitle{
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+
+    margin-left: 40px;
+    margin-top: 0.1px;
+}
+.ch-content{
+    opacity: 0;
+    animation: fadeIn 5s forwards;
+    text-align: center;
+    font-family: "M PLUS Rounded 1c",sans-serif;
+}
+.Member{
+    opacity: 0;
+    animation: fadeIn 3s forwards;
+    transform: translateY(-100px);
+    text-align: center;
+}
+.content{
+    font-size: 40px;
+    transform: translateY(-50px);
+}
+.passage{
+    font-size: 25px;
+    transform: translateY(-60px);
+}
+.member-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    margin-top: 40px;
+    transform: translate(90px,-40px);
+}
+.member{
+    font-size: 30px;
+    opacity: 0;
+    animation: fadeIn 5s forwards;
+}
+.member-content{
+    max-height: 0;
+    overflow: hidden;
+    transition:max-height 0.9s ease;
+    font-size: 20px;
+}
+
+.member-content.open{
+    max-height: 400px;
+}
+
+.member-btn{
+    font-size: 40px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    
+}
+.member-image{
+    opacity: 0;
+    animation: fadeIn 5s forwards;
+
+    width: 200px;
+    border-radius: 15px;
+    margin: 20px 0;
+    display: block;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+.member-content a{
+    color: white;
+    text-decoration: none;
+}
+
+.member-content a:hover{
+    color: #1da1f2;
+}
+
+.member-content i{
+    margin-right: 8px;
+}
